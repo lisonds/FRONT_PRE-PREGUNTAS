@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--los Iconos-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  <!--iconos Estrella-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="css/Produc.css">
+    <title>PRE-PREGUNTAS </title>
+</head>
+<body>
+    <!--=======HEAD========-->
+  <nav>
+      <div class="container">
+          <h2 class="log">
+              PRE-PREGUNTAS
+          </h2>
+          <div class="search-bar">
+            <i class="uil uil-search"></i>
+            <input type="search" placeholder="Busqueda para creadores">
+          </div>
+          <div class="create">
+              <label class="btn btn-primary" for="create-post">
+                    Create
+              </label>
+              <div class="profile-picture">
+                  <img src="./imagen/01.PNG" alt="">
+              </div>
+          </div>
+
+      </div>
+  </nav>
+
+   <!--=======MAIN========-->
+   <main>
+       <div class="container">
+           <div class="left">
+                <a class="profile">
+                    <div class="profile-picture">
+                        <img src="./imagen/01.PNG" >
+                    </div>
+                    <div class="handle">
+                        <h4>Lisonds</h4>
+                        <p class="text-muted">
+                            @tulio
+                        </p>
+                    </div>
+                </a>
+                <!--=======BARRALATERAL========-->
+                <div class="sidebar">
+                    <a  class="menu-item active">
+                        <span><i class="uil uil-home"></i></span><h3>Home</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                    </a>
+                    <a  class="menu-item" id="notifications" >
+                        <span><i class="uil uil-bell"><small class="notification-count">+2</small></i></span><h3>Notifications</h3>
+                        <!--=======Notificaciones========-->
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Tulio Lisonds</b> aceptecomo tu amigo
+                                    <small class="text-muted">2 dias Noviembre</small>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Pedro castillo</b> aceptecomo tu amigo
+                                    <small class="text-muted">3 dias Noviembre</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a  class="menu-item" id="messages-notifications">
+                        <span><i class="uil uil-envelopes"><small class="notification-count">+6</small></i></span><h3>Message</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
+                    </a>
+                    <a  class="menu-item">
+                        <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+                    </a>
+                    <a  class="menu-item active">
+                        <span><i class="uil uil-setting"></i></span><h3>Sttings</h3>
+                    </a>               
+                
+                </div>
+                <label for="create-post" class="btn btn-primary">Crear un post</label>
+
+                
+            </div>
+            <div class="middle">
+                <!--Filter-->
+                <section class="filter">
+                    <div class="grid">
+                      <div class="div">
+                        <label for="buscar"><span><i class="uil uil-search"></i></span></label>
+                        <input type="text" id="buscar" placeholder="Buscar relojes...">
+                      </div>
+                      <div class="category">
+                        <select id="category" onclick="categoryValue()">
+                          <option value="">Marcas</option>
+                          <option value="rolex">Rolex</option>
+                          <option value="omega">Omega</option>
+                          <option value="audemars">Audemars</option>
+                          <option value="rolexDay">Rolex Day</option>
+                          <option value="hublot">Hublot</option>
+                          <option value="tag">Tag Heuer</option>
+                        </select>
+                      </div>
+                    </div>
+                  </section>
+                <!--DESARROLLAMOS PRODUCTOS-->
+                <section class="productos">
+                    <div class="productos__center">
+                      <div class="producto">
+                        <div class="image__container">
+                          <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="">
+                        </div>
+                        <div class="producto__footer">
+                          <h1>Rejoles Originales</h1>
+                          <div class="rating">
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                          </div>
+                          <div class="price">$102.00</div>
+                        </div>
+                        <div class="bottom-producto">
+                          <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalles.html" class="btn view">Vista</a>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="producto">
+                        <div class="image__container">
+                          <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="">
+                        </div>
+                        <div class="producto__footer">
+                          <h1>Rejoles Originales</h1>
+                          <div class="rating">
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                          </div>
+                          <div class="price">$102.00</div>
+                        </div>
+                        <div class="bottom-producto">
+                          <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalles.html" class="btn view">Vista</a>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="producto">
+                        <div class="image__container">
+                          <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="">
+                        </div>
+                        <div class="producto__footer">
+                          <h1>Rejoles Originales</h1>
+                          <div class="rating">
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                          </div>
+                          <div class="price">$102.00</div>
+                        </div>
+                        <div class="bottom-producto">
+                          <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalles.html" class="btn view">Vista</a>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="producto">
+                        <div class="image__container">
+                          <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="">
+                        </div>
+                        <div class="producto__footer">
+                          <h1>Rejoles Originales</h1>
+                          <div class="rating">
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                          </div>
+                          <div class="price">$102.00</div>
+                        </div>
+                        <div class="bottom-producto">
+                          <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalles.html" class="btn view">Vista</a>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="producto">
+                        <div class="image__container">
+                          <img src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305" alt="">
+                        </div>
+                        <div class="producto__footer">
+                          <h1>Rejoles Originales</h1>
+                          <div class="rating">
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                            <span>
+                                <i class="uil uil-star"></i>
+                            </span>
+                          </div>
+                          <div class="price">$102.00</div>
+                        </div>
+                        <div class="bottom-producto">
+                          <div class="btn__group">
+                            <a href="#" class="btn addToCart">Añadir carrito</a>
+                            <a href="producto-detalles.html" class="btn view">Vista</a>
+                          </div>
+                        </div>
+                      </div> 
+
+                    </div>
+                  </section>
+                  
+              
+            </div>
+            
+       </div>
+   </main>
+</body>
+
+</html>
