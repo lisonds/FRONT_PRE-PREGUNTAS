@@ -263,53 +263,62 @@ main .container .left .profile{
 
 /*Filter*/
 .middle .filter{
-    padding: 0 2rem;
     width: 100%;
-    margin: 12rem auto 0 auto;
-    
+    padding: 0px 2rem;
+    margin: 1rem auto 0px;
+       
 }
-.filter .grid{
+.middle .filter .grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-row-gap:30px;
+    grid-template-columns: 400px 200px;
+    justify-content: space-between;
+    margin: auto;
     grid-row-gap: 30px;
     
 }
-.filter label{
-    font-size: 2.3rem;
+.middle .filter label{
+    
+    font-size: 2rem;
     outline: 0;
     color: #471ea7;
+    background: var(--color-white);
     
 }
-.filter input{
+.middle .filter input{
     border: none;
-    width: 80%;
-    height: 30px;
+    width: 500px;
+    height: 100%;
     outline: 0;
-    padding: 0 1rem;
-    font-size: 1.6rem;
+    padding: 0rem;
+    font-size: 1.2em;
     font-weight: 500;
-    color: #7e7a7a;
+    color: var(--color-primary);
+        
 }
-.filter .div{
-    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, .2);
+.middle .filter .div{
+    
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .2);
+    display: flex;
+    padding: 0.5;
     height: 40px;
-    padding: .5rem 2rem;
+    
 }
-.filter .category{
+.middle .filter .category{
     box-shadow: 0 2px 5px 0px rgba(0, 0, 0, .2);
     display: flex;
-    padding: 0 1rem;
+    padding: 0.5;
     height: 40px;
 }
-.filter .category select{
+.middle .filter .category select{
     border: 0;
     outline: 0;
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: #5a5858;
 }
 @media (min-width: 768px){
-    .filter .grid{
+    .middle .filter .grid{
         grid-template-columns: 480px 200px;
         justify-content: space-between;
         max-width: 1092px;
