@@ -391,3 +391,61 @@ main .container .right{
     bottom: 0;
     right: 0;
 }
+
+/*realizar publicaciones*/
+.customize-theme{
+    background: rgba(66, 65, 65, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+}
+.customize-theme .card{
+    background-color: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 50%;
+}
+.form-input{
+    display: block;
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 1px;
+}
+.form-label{
+    width: 30%;
+}
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.publicar-bar{
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+
+.publicar-bar input[type="publicar"]{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+.publicar-bar input[type="publicar"]::placeholder{
+    color: var(--color-gray);
+}
+.form-file{
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%;
+}
