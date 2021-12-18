@@ -58,16 +58,15 @@
                         <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
                     </a>
                     <a  class="menu-item" id="notifications" >
-                        <span><i class="uil uil-bell"><small class="notification-count">+2</small></i></span><h3>Notifications</h3>
-                        <!--=======Notificaciones========-->
+                        <span><i class="uil uil-chart-line"></i></span><h3>MATEMATICAS</h3>
+                        <!--=======Notificaciones1========-->
                         <div class="notification-popup">
                             <div>
                                 <div class="profile-photo">
                                     <img src="./imagen/" >
                                 </div>
                                 <div class="notification-body">
-                                    <b>Tulio Lisonds</b> aceptecomo tu amigo
-                                    <small class="text-muted">2 dias Noviembre</small>
+                                    <b>Aritmetica</b> 
                                 </div>
                             </div>
                         
@@ -76,13 +75,115 @@
                                     <img src="./imagen/" >
                                 </div>
                                 <div class="notification-body">
-                                    <b>Pedro castillo</b> aceptecomo tu amigo
-                                    <small class="text-muted">3 dias Noviembre</small>
+                                    <b>Algebra</b> 
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Geometria</b> 
+                                </div>
+                               
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>TRIGONOMETRIA</b> 
                                 </div>
                             </div>
                         </div>
 
                     </a>
+                    <a  class="menu-item" id="notifications2" >
+                        <i class="uil uil-dna"></i><h3>CIENCIAS</h3>
+                        <!--=======Notificaciones2========-->
+                        <div class="notification-popup1">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Fisica</b> 
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Quimica</b> 
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Biologia</b> 
+                                </div>
+                               
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Anatomia</b> 
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a  class="menu-item" id="notifications3" >
+                        <i class="uil uil-books"></i><h3>LETRAS</h3>
+                        <!--=======Notificaciones3========-->
+                        <div class="notification-popup2">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>R.V.</b> 
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Lenguaje</b> 
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Historia</b> 
+                                </div>
+                               
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./imagen/" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Geografia</b> 
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+
                     <a  class="menu-item" id="messages-notifications">
                         <span><i class="uil uil-envelopes"><small class="notification-count">+6</small></i></span><h3>Message</h3>
                     </a>
@@ -249,6 +350,7 @@
  <!--=============REALIZAR PUBLICACIONES  O REALIZAR POST=======-->
 <div class="customize-theme">
     <div class="card">
+               
         <form action="" method="post" enctype="multipart/form-data">
             <h2>Comparte contenido</h2>
             <p>realice las preguntas necesarias</p>
@@ -261,16 +363,31 @@
                     </div>
                 </div>
                 <input class="form-file" type="file" name="imagen">
+               <!--
                 <label class="btn btn-primary" for="create-post">
                     Publicar
               </label>
+              <label class="btn btn-primary" for="create-post">
+                Cancelar
+          </label>
+        -->
+            <div class="background">
+                <div class="chose-bg">
+                    <div class="bg1">
+                        <h5>Publicar</h5>
+                    </div>
+                    <div class="bg2 active">
+                        <h5>Cancelar</h5>
+                    </div>
+                </div>
+            </div>
                                 
             </div>
         </form>
     </div>
 </div>
 
-
+<script src="./js/index.js"></script>
 </body>
 
 </html>

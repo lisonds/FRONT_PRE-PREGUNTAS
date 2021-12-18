@@ -236,7 +236,7 @@ main .container .left .profile{
     top: 0;
     left: 110%;
     width: 30rem;
-    background: var(--color-white);
+    background: var(--color-secondary);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     box-shadow: 0 0 2rem hsl(var(--color-primary),75%, 60% 25%);
@@ -249,7 +249,7 @@ main .container .left .profile{
     width: 1.2rem;
     height: 1.2rem;
     display: block;
-    background: var(--color-white);
+    background: var(--color-secondary);
     position: absolute;
     left: -0.6rem;
     transform: rotate(45deg);
@@ -262,6 +262,74 @@ main .container .left .profile{
     margin-bottom: 1rem;
 }
 .left .notification-popup small{
+    display: block;
+}
+/*notificacion 2*/
+.left .notification-popup1{
+    position: absolute;
+    top: 0;
+    left: 110%;
+    width: 30rem;
+    background: var(--color-secondary);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: 0 0 2rem hsl(var(--color-primary),75%, 60% 25%);
+    z-index: 8;
+    display: none;/*ocultamos*/
+}
+
+.left .notification-popup1::before{
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    background: var(--color-secondary);
+    position: absolute;
+    left: -0.6rem;
+    transform: rotate(45deg);
+}
+
+.left .notification-popup1 >div{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.left .notification-popup1 small{
+    display: block;
+}
+/*notificacion 3*/
+.left .notification-popup2{
+    position: absolute;
+    top: 0;
+    left: 110%;
+    width: 30rem;
+    background: var(--color-secondary);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: 0 0 2rem hsl(var(--color-primary),75%, 60% 25%);
+    z-index: 8;
+    display: none;/*ocultamos*/
+}
+
+.left .notification-popup2::before{
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    background: var(--color-secondary);
+    position: absolute;
+    left: -0.6rem;
+    transform: rotate(45deg);
+}
+
+.left .notification-popup2 >div{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.left .notification-popup2 small{
     display: block;
 }
 
@@ -405,6 +473,7 @@ main .container .right{
     display: grid;
     place-items: center;
     font-size: 0.9rem;
+    display: none;/*para desaparecer un momento*/
 }
 .customize-theme .card{
     background-color: var(--color-white);
@@ -436,7 +505,8 @@ main .container .right{
 
 .publicar-bar input[type="publicar"]{
     background: transparent;
-    width: 30vw;
+    width: 40vw;
+    height: 10vw;
     margin-left: 1rem;
     font-size: 0.9rem;
     color: var(--color-dark);
@@ -448,4 +518,41 @@ main .container .right{
     font-size: 1em;
     margin: 10px 0;
     width: 100%;
+}
+
+.background{
+    margin-top: 2rem;
+}
+.chose-bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+}
+.chose-bg > div{
+    padding: var(--card-padding);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--color-dark);
+    background: black;
+    color: white;
+    
+}
+
+.customize-theme .chose-bg>div.active{
+    border: 2px solid var(--color-dark);
+}
+.chose-bg .bg1{
+    background: white;
+    color: black;
+}
+chose-bg .bg2{
+    background: white;
+    color: black;
 }
