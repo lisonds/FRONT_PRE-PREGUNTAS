@@ -480,6 +480,7 @@ main .container .right{
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 .form-input{
     display: block;
@@ -501,19 +502,23 @@ main .container .right{
     background: var(--color-light);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
+    
 }
 
-.publicar-bar input[type="publicar"]{
-    background: transparent;
+.publicar-bar textarea[type="publicar"]{
+    
     width: 40vw;
     height: 10vw;
     margin-left: 1rem;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: var(--color-dark);
+    box-shadow: 0 0 1rem var(--color-primary);
+    padding: 10px;
 }
 .publicar-bar input[type="publicar"]::placeholder{
     color: var(--color-gray);
 }
+
 .form-file{
     font-size: 1em;
     margin: 10px 0;
@@ -528,10 +533,12 @@ main .container .right{
     align-items: center;
     justify-content: space-between;
     gap: 8rem;
+    justify-content: center;
+    
 }
 .chose-bg > div{
     padding: var(--card-padding);
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     font-size: 1rem;
@@ -548,11 +555,11 @@ main .container .right{
 .customize-theme .chose-bg>div.active{
     border: 2px solid var(--color-dark);
 }
-.chose-bg .bg1{
+.bg1{
     background: white;
     color: black;
 }
-chose-bg .bg2{
+.bg2{
     background: white;
     color: black;
 }

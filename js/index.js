@@ -67,3 +67,31 @@ menuitems.forEach(item=>{
     })
 })
 
+//Publicar post id theme
+const theme=document.querySelector('#theme');
+const themeModal=document.querySelector('.customize-theme');
+
+//THEME DISPLAY
+//abrir modal
+const openThemeModal=()=>{
+    themeModal.style.display='grid';
+}
+//cerrar modal
+const closeTheModal=(e)=>{
+    if(e.target.classList.contains('customize-theme')){
+        themeModal.style.display='none';
+    }
+}
+
+themeModal.addEventListener('click',closeTheModal)
+theme.addEventListener('click',openThemeModal)
+
+const themep=document.querySelector('#themep');
+const openThemeModal2=()=>{
+    themeModal.style.display='grid';
+}
+themep.addEventListener('click',openThemeModal2)
+
+
+
+
