@@ -8,6 +8,17 @@
     <!--los Iconos-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Icon -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <title>PRE-PREGUNTAS </title>
 </head>
 <body>
@@ -246,10 +257,12 @@
                             
                            </div>
                        </div>
-                       <div class="caption">
+                       <div >
                            <p><b>Tulio Lison</b> ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
                        </div>
-                       <div class="comments text-muted">277 comentarios</div>
+                       <div class="caption" id="coment">
+                            <i  href="#" class="comments text-muted">277 comentarios</i>
+                        </div>
                    </div>
                </div>
 
@@ -284,10 +297,12 @@
                          
                         </div>
                     </div>
-                    <div class="caption">
+                    <div >
                         <p><b>Tulio Lison</b> ipsum dolor sit amet consectetur adipisicing elit. Eligendi.</p>
                     </div>
-                    <div class="comments text-muted">277 comentarios</div>
+                    <div class="caption" id="coment">
+                         <i  href="#" class="comments text-muted">277 comentarios</i>
+                     </div>
                 </div>
             </div>
 
@@ -384,8 +399,105 @@
         </form>
     </div>
 </div>
+<!--COMENTARIOS -->
+<div class="customize-coment">
+    <div class="card">
+               
+        <form action="" method="post" enctype="multipart/form-data">
+            <h2>Comentarios </h2>25
+         
+            
+                
+          <!--desde a qui-->
+          <div class="containercomen">
+            <div class="box-comments">
+                <div class="item">
+                    <div class="userbox">
+                        <div class="avatar">
+                            <img src="uploads/avatar1.png" alt="">
+                        </div>
+                        <div class="comment-info">
+                            <div class="username">
+                                <span class="name">adamsdavid</span>
+                                <span class="datetime">20 hours ago</span>
+                            </div>
+                            <div class="mess">
+                                <img class="messimg" src="/imagen/ejecicio3.jpg" alt="">
+                                I genuinely think that Codewell’s community is AMAZING. It’s just starting out but the templates on there
+                                are amazing.
+                                👀
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="act act-reply">Comentar</a>
+                                <a href="#" class="act">Like</a>
+                            </div>
+                            <div class="input-comment">
+                                <input type="text" class="form-control" placeholder="Input comment...">
+                                <button class="btn btn-send">
+                                    <i class="las la-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                   
+                </div>
+                <div class="item">
+                    <div class="userbox">
+                        <div class="avatar">
+                            <img src="uploads/avatar4.png" alt="">
+                        </div>
+                        <div class="comment-info">
+                            <div class="username">
+                                <span class="name">andrew231</span>
+                                <span class="datetime">20 hours ago</span>
+                            </div>
+                            <div class="mess">
+                                Thanks for making this, super helpful
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="act act-reply">Reply</a>
+                                <a href="#" class="act">Like</a>
+                            </div>
+                            <div class="input-comment">
+                                <input type="text" class="form-control" placeholder="Input comment...">
+                                <button class="btn btn-send">
+                                    <i class="las la-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="input-comments">
+                    <input type="text" class="form-control" placeholder="Comentar...">
+                    <button class="btn btn-send1">
+                        <i class="las la-paper-plane"></i>
+                        
+                    </button>
+                    <label for="file-upload" class="custom-file-upload">
+                        <i class="uil uil-camera"></i> 
+                    </label>
+                    <input id="file-upload" type="file"/>
+                </div>
+            </div>
+        </div>
+          <!--Hasta Aqui-->
+        
+            
+                                
+            </div>
+        </form>
+    </div>
+</div>
 
 <script src="./js/index.js"></script>
+<script>
+    $(".act-reply").click(function(){
+        $(this).parents(".userbox").find(".input-comment").toggleClass("show");
+        $(this).toggleClass("active");
+    });
+</script>
 </body>
 
 </html>

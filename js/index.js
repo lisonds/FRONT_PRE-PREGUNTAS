@@ -94,4 +94,27 @@ themep.addEventListener('click',openThemeModal2)
 
 
 
+//Comentarios post id theme
+const coment=document.querySelector('#coment');
+const comentModal=document.querySelector('.customize-coment');
+
+
+//THEME DISPLAY
+//abrir modal
+const openThemeModal3=()=>{
+    comentModal.style.display='grid';
+}
+
+//cerrar modal
+const closeTheModal3=(e)=>{
+    if(e.target.classList.contains('customize-coment')){
+        comentModal.style.display='none';
+    }
+}
+
+comentModal.addEventListener('click',closeTheModal3)
+coment.addEventListener('click',openThemeModal3)
+
+
+
 
