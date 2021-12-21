@@ -48,6 +48,38 @@ body{
     border-radius: 50%;
     overflow: hidden;
 }
+.header__menu {
+	margin-right: 30px;
+}
+
+.header__menu ul {
+    display: none;
+    list-style: none;
+    margin: 0px 0px 0px -14px;
+    padding: 10px;
+    position: absolute;
+    width: 130px;
+    text-align: right;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+.header__menu:hover ul, ul:hover {
+	display: block;
+}
+
+.header__menu li {
+    margin: 10px 0px;
+}
+
+.header__menu li a {
+    color: white;
+    text-decoration: none;
+}
+  
+.header__menu li a:hover {
+    text-decoration: underline;
+}
 img{
     display: block;
     width: 100%;
@@ -824,6 +856,7 @@ main .container .right{
     
 .input-comments .btn-send:hover {
             color: #2E2C98; }
+
 
 
 
